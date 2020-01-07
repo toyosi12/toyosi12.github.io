@@ -13,7 +13,7 @@
         
         recognition.grammers = speechRecognitionList;
         recognition.lang = 'en-US';
-        recognition.interimResults = true;
+        recognition.interimResults = false;
         recognition.maxAlternatives = 1;
         
         var diagnostic = document.getElementById('word_box')
@@ -22,6 +22,8 @@
         })
         
         document.getElementById('fab').onclick = function(){
+            var audio = new Audio('assets/pop.mp3');
+            audio.play();
             recognition.start();
             console.log('let\'s go');
         }
@@ -54,7 +56,4 @@
             diagnostic.textContent = "An error occured " + event.error;
         }
 
-document.getElementById('fab').onclick = function(){
-    var audio = new Audio('assets/pop.mp3');
-    audio.play();
-}
+
