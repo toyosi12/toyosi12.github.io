@@ -1,0 +1,35 @@
+*{
+    font-family: 'Galada', cursive;
+    
+}
+.shadow{
+    border: none !important;
+}
+div.card a{
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    color: #252525
+}
+
+footer{
+    position: absolute;
+    bottom: calc(0px + 20px);
+    left: calc(100% - 80px);
+}
+
+footer button.fab{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:  #a70000;
+    color: #fff;
+    font-size: 1.3em;
+    box-shadow: 4px 4px 9px #777;
+    border: none;
+}
+
+.modal{
+    margin-top: 20%
+}
+
