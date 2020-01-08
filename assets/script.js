@@ -3,7 +3,7 @@
         var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
         var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
         
-        var pages = ['home', 'contact', 'about', 'clients'];
+        var pages = ['home', 'contact', 'about', 'test'];
         var grammer = '#JSGF V1.0; grammer pages; public <pages> = ' + pages.join(' | ') + ' ;'
         
         var recognition = new SpeechRecognition();
